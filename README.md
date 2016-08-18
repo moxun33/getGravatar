@@ -38,4 +38,32 @@ urlencode('http://example.com/images/avatar.jpg');
 
 #使用方法
 ####直接使用
+<code>
+<?php
+
+function get_gravatar($email='', $s=28, $d='mm', $r='g', $atts=array(), $img=TRUE, $f=FALSE){
+    $url = 'https://secure.gravatar.com/avatar/';
+    $url .= md5(strtolower(trim($email)));
+    $url .= ($f) ? "?s=$s&d=$d&r=$r&f=y" : "?s=$s&d=$d&r=$r";
+    if($img){
+        $url = '<img src="' . $url . '"';
+        foreach($atts as $key=>$val)
+            $url .= ' ' . $key . '="' . $val . '"';
+        $url .= ' />';
+    }
+    return $url;
+}
+
+$email=time().'i@boliquan.com';
+$atts=array(
+    'alt'=>'Gravatar',
+    'class'=>'avatar'
+);
+echo get_gravatar($email,28,'wavatar','g',$atts,TRUE,FALSE);
+echo get_gravatar($email,36,'mm','g',$atts,TRUE,TRUE);
+echo get_gravatar($email,36,'monsterid','g',$atts,TRUE,TRUE);
+echo get_gravatar($email,36,'retro','g',$atts,TRUE,TRUE);
+echo get_gravatar($email,56,'identicon','g',array(),TRUE,TRUE);
+?>
+</code>
 
