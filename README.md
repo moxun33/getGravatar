@@ -38,7 +38,7 @@ urlencode('http://example.com/images/avatar.jpg');
 
 #使用方法
 ####直接使用
-<code>
+<pre><code>
 <?php
 
 function get_gravatar($email='', $s=28, $d='mm', $r='g', $atts=array(), $img=TRUE, $f=FALSE){
@@ -65,5 +65,5 @@ echo get_gravatar($email,36,'monsterid','g',$atts,TRUE,TRUE);
 echo get_gravatar($email,36,'retro','g',$atts,TRUE,TRUE);
 echo get_gravatar($email,56,'identicon','g',array(),TRUE,TRUE);
 ?>
-</code>
+</code></pre>
 
