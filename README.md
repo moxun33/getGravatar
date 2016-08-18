@@ -4,14 +4,14 @@
 如果需要强制显示默认头像，在最后加上参数&f=y
 
 二、可选“头像服务器”：
-http://www.gravatar.com
-http://0.gravatar.com
-http://1.gravatar.com
-http://2.gravatar.com
-http://3.gravatar.com
-http://s.gravatar.com
-http://en.gravatar.com
-https://secure.gravatar.com (由于中国的网络环境，推荐这个)
+#http://www.gravatar.com
+#http://0.gravatar.com
+#http://1.gravatar.com
+#http://2.gravatar.com
+#http://3.gravatar.com
+#http://s.gravatar.com
+#http://en.gravatar.com
+#https://secure.gravatar.com (由于中国的网络环境，推荐这个)
 
 三、“邮箱的md5值”获取方法：
 
