@@ -36,4 +36,6 @@ urlencode('http://example.com/images/avatar.jpg');
 ####r 成人级，只适合17岁以上成人查看
 ####x 最高等级，不适合大多数人查看
 
+#使用方法
+####直接使用
 
